@@ -6,7 +6,14 @@ end
 
 set fish_greeting ""
 
-alias dev "tmux new -s dev"
+# tmux aliases
+alias main "tmux new -s main"
+alias fp "tmux neww tmux-sessionizer"
+alias tl "tmux ls"
+alias ta "tmux attach -t"
+alias ks "tmux kill-session && tmux ls"
+
+alias rs "reveal-ssh-hosts"
 alias vim "nvim"
 alias nerd "nerdfetch"
 
