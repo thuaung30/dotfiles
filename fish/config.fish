@@ -19,3 +19,8 @@ alias nerd "nerdfetch"
 
 source ~/.phpbrew/phpbrew.fish
 starship init fish | source
+
+# Nix
+if [-e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh']
+    . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+end
