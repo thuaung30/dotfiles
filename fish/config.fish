@@ -21,6 +21,7 @@ source ~/.phpbrew/phpbrew.fish
 starship init fish | source
 
 # Nix
-if [-e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh']
-    . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+if test -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish'
+  source '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish'
 end
+# End Nix
