@@ -6,6 +6,14 @@ vim.keymap.set({"n", "v"}, "<C-h>", ":noh<CR>")
 -- home row escape
 vim.keymap.set("i", "kj", "<esc>")
 
+-- no arrow keys
+vim.keymap.set("n", "<up>", "<nop>")
+vim.keymap.set("n", "<down>", "<nop>")
+vim.keymap.set("i", "<up>", "<nop>")
+vim.keymap.set("i", "<down>", "<nop>")
+vim.keymap.set("i", "<left>", "<nop>")
+vim.keymap.set("i", "<right>", "<nop>")
+
 -- very magic by default
 vim.keymap.set("n", "?", "?\\v")
 vim.keymap.set("n", "/", "/\\v")
