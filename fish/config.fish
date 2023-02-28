@@ -19,6 +19,7 @@ alias nerd "nerdfetch"
 
 source ~/.phpbrew/phpbrew.fish
 starship init fish | source
+pyenv init - | source
 
 # Nix
 if test -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish'

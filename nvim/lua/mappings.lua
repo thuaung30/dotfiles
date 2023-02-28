@@ -1,7 +1,7 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- clear search
-vim.keymap.set({"n", "v"}, "<C-h>", ":noh<CR>")
+vim.keymap.set({ "n", "v" }, "<C-h>", ":noh<CR>")
 
 -- home row escape
 vim.keymap.set("i", "kj", "<esc>")
@@ -20,11 +20,11 @@ vim.keymap.set("n", "/", "/\\v")
 vim.keymap.set("c", "%s/", "%sm/")
 
 -- left and right can switch buffers
-vim.keymap.set("n", "<left>" , ":bp<CR>")
-vim.keymap.set("n", "<right>" , ":bn<CR>")
+vim.keymap.set("n", "<left>", ":bp<CR>")
+vim.keymap.set("n", "<right>", ":bn<CR>")
 
 -- toggle between buffers
-vim.keymap.set("n", "<leader>;" , ":buffers<CR>")
+vim.keymap.set("n", "<leader>;", ":buffers<CR>")
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
 
 -- jump to start and end of line using the home row keys
@@ -32,7 +32,7 @@ vim.keymap.set("", "H", "^")
 vim.keymap.set("", "L", "$")
 
 -- keymap for replacing up to next _ or -
-vim.keymap.set("", "<leader>m", "ct_")
+vim.keymap.set("n", "<leader>m", "ct_")
 
 -- fast save & quit
 vim.keymap.set("n", "<leader>w", ":w<CR>")
@@ -58,7 +58,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set({ "n", "v" }, "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
