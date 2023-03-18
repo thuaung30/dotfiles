@@ -1,0 +1,15 @@
+add_newline = true
+
+[character]
+success_symbol = '[|](bold green)'
+error_symbol = '[|](bold red)'
+
+[cmd_duration]
+disabled = true
+
+[directory]
+home_symbol = ''
+format = '🚀[$path]($style)[$read_only]($read_only_style) '
+
+[line_break]
+disabled = true
