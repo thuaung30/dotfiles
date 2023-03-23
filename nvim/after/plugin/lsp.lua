@@ -3,17 +3,27 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
+    'lua_ls',
     'tsserver',
     'rust_analyzer',
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
+            runtime = {
+                -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+                version = 'LuaJIT',
+            },
             diagnostics = {
-                globals = { 'vim' }
-            }
+                -- Get the language server to recognize the `vim` global
+                globals = {'vim'},
+            },
+            -- Do not send telemetry data containing a randomized but unique identifier
+            telemetry = {
+                enable = false,
+            },
         }
     }
 })
@@ -27,10 +37,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ["<C-Space>"] = cmp.mapping.complete(),
 })
 
--- disable completion with tab
--- this helps with copilot setup
--- cmp_mappings['<Tab>'] = nil
--- cmp_mappings['<S-Tab>'] = nil
+--disable completion with tab
+--this helps with copilot setup
+cmp_mappings['<Tab>'] = nil
+cmp_mappings['<S-Tab>'] = nil
 
 lsp.setup_nvim_cmp({
     mapping = cmp_mappings
