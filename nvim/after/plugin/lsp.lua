@@ -18,7 +18,7 @@ lsp.configure('lua_ls', {
             },
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
-                globals = {'vim'},
+                globals = { 'vim' },
             },
             -- Do not send telemetry data containing a randomized but unique identifier
             telemetry = {
