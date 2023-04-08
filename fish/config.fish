@@ -17,7 +17,6 @@ alias rs "reveal-ssh-hosts"
 alias vim "nvim"
 alias nerd "nerdfetch"
 
-source ~/.phpbrew/phpbrew.fish
 starship init fish | source
 pyenv init - | source
 
