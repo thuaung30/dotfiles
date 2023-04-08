@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "lua", "rust", "typescript" },
+    ensure_installed = { "lua", "rust", "typescript", "yaml" },
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = true,
     -- Automatically install missing parsers when entering buffer
