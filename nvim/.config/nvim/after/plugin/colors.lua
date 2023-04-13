@@ -3,4 +3,4 @@ function ColorVim(color)
     vim.cmd.colorscheme(color)
 end
 
-ColorVim()
+-- ColorVim()

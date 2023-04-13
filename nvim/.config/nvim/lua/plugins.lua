@@ -39,5 +39,6 @@ return require("packer").startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = false }
     }
 
+    use { "catppuccin/nvim", as = "catppuccin" }
     use "xiyaowong/nvim-transparent"
 end)
