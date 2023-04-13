@@ -103,7 +103,6 @@ alias vim="nvim"
 
 # tmux-sessionizer bindkey
 bindkey -s ^f "tmux-sessionizer\n"
-bindkey -s ^a "tmux a\n"
 
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \

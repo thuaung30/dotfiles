@@ -6,22 +6,8 @@ end
 
 set fish_greeting ""
 
-# tmux aliases
-alias main "tmux new -s main"
-alias fp "tmux neww tmux-sessionizer"
-alias tl "tmux ls"
-alias ta "tmux attach -t"
-alias ks "tmux kill-session && tmux ls"
-
-alias rs "reveal-ssh-hosts"
 alias vim "nvim"
 alias nerd "nerdfetch"
 
 starship init fish | source
 pyenv init - | source
-
-# Nix
-if test -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish'
-  source '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish'
-end
-# End Nix
