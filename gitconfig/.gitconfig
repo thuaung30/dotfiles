@@ -2,8 +2,8 @@
     name = Thu Htet Aung
     email = thuhtetaung.d2@gmail.com
 [alias]
-    c = commit
-    ci = commit
+    c = commit -m
+    ci = commit -m
     s = status
     st = status
     last = log -1 HEAD
