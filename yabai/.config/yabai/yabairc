@@ -56,6 +56,7 @@ yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Software Update$" manage=off
 yabai -m rule --add app="^WireGuard$" manage=off
 yabai -m rule --add app="^The Unarchiver$" manage=off
+yabai -m rule --add app="^VLC$" manage=off
 
 # ===== Signals ================================
 
