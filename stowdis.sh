@@ -1,7 +1,7 @@
 !#/bin/zsh
 
 if [[ -z $STOW_FOLDERS ]]; then
-	STOW_FOLDERS="alacritty,base16-shell,fish,gitconfig,nix,nvim,scripts,skhd,starship,tmux,yabai,zsh"
+	STOW_FOLDERS="alacritty,fish,gitconfig,nvim,scripts,skhd,starship,tmux,yabai,zsh"
 fi
 
 if [[ -z $DOTFILES ]]; then
