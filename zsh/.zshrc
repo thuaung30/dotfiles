@@ -112,3 +112,6 @@ eval "$(fnm env --use-on-cd)"
 #     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 #         source "$BASE16_SHELL/profile_helper.sh"
 # base16_horizon-dark
+#
+# #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
