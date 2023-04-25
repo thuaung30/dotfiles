@@ -14,7 +14,7 @@ sudo yabai --load-sa
 
 yabai -m config layout                      bsp
 
-yabai -m config top_padding                 38
+yabai -m config top_padding                 10
 yabai -m config bottom_padding              10
 yabai -m config left_padding                10
 yabai -m config right_padding               10
@@ -47,12 +47,16 @@ yabai -m config mouse_action2               resize
 # ===== Rules ==================================
 
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Dictionary$" manage=off
+yabai -m rule --add app="^Docker$" manage=off
 yabai -m rule --add app="System Information" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add app="^Outlook$" manage=off
 yabai -m rule --add app="^Software Update$" manage=off
 yabai -m rule --add app="^WireGuard$" manage=off
 yabai -m rule --add app="^The Unarchiver$" manage=off
@@ -60,7 +64,7 @@ yabai -m rule --add app="^VLC$" manage=off
 
 # ===== Signals ================================
 
-yabai -m signal --add event=space_changed action="${ubersicht_spaces_refresh_command}"
+# yabai -m signal --add event=space_changed action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=application_front_switched action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=display_changed action="${ubersicht_spaces_refresh_command}"
 # yabai -m signal --add event=window_created action="${ubersicht_spaces_refresh_command}"

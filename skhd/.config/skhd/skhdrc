@@ -1,6 +1,6 @@
 # # open terminal
 cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
-fn + alt - h : /Applications/LibreWolf.app/Contents/MacOS/librewolf
+fn + alt - h : /Applications/Safari.app/Contents/MacOS/Safari
 
 # Navigation
 alt - h : yabai -m window --focus west
