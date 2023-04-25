@@ -1,4 +1,4 @@
-!#/bin/zsh
+#! /bin/zsh
 
 if [[ -z $STOW_FOLDERS ]]; then
 	STOW_FOLDERS="alacritty,fish,gitconfig,nvim,scripts,skhd,starship,tmux,yabai,zsh"
