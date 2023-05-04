@@ -46,4 +46,6 @@ return require("packer").startup(function(use)
             require("copilot").setup({})
         end,
     }
+
+    use "APZelos/blamer.nvim"
 end)
