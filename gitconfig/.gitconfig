@@ -1,6 +1,6 @@
 [user]
     name = Thu Htet Aung
-    email = thuhtetaung.d2@gmail.com
+	email = "thuhtetaung.d2@gmail.com"
 [alias]
     c = commit -m
     ci = commit -m
