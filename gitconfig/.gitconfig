@@ -10,3 +10,5 @@
     lg = log --oneline
     lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     f = push --force-with-lease
+[core]
+	editor = vim
