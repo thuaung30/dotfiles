@@ -61,6 +61,7 @@ yabai -m rule --add app="^Software Update$" manage=off
 yabai -m rule --add app="^WireGuard$" manage=off
 yabai -m rule --add app="^The Unarchiver$" manage=off
 yabai -m rule --add app="^VLC$" manage=off
+yabai -m rule --add app="^Mullvad VPN$" manage=off
 
 # ===== Signals ================================
 
