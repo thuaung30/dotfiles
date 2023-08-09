@@ -47,7 +47,7 @@ vim.cmd([[
 ]])
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
-vim.cmd.colorscheme "catppuccin-mocha"
+vim.cmd.colorscheme "rose-pine"
 
 -- blamer.nvim settings
 vim.g.blamer_enabled = false
