@@ -30,6 +30,8 @@ return require("packer").startup(function(use)
         }
     }
     use "tpope/vim-commentary"
+    use "tpope/vim-fugitive"
+    use "tpope/vim-surround"
 
     use {
         'nvim-lualine/lualine.nvim',
@@ -47,6 +49,4 @@ return require("packer").startup(function(use)
             require("copilot").setup({})
         end,
     }
-
-    use "APZelos/blamer.nvim"
 end)

@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
   },
-  ["blamer.nvim"] = {
-    loaded = true,
-    path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/blamer.nvim",
-    url = "https://github.com/APZelos/blamer.nvim"
-  },
   catppuccin = {
     loaded = true,
     path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -192,6 +192,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/thuhtetaung/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

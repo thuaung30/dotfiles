@@ -66,3 +66,6 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+-- disable lsp log
+vim.lsp.set_log_level("off")
