@@ -102,6 +102,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias nerd="nerdfetch"
+alias k="kubectl"
+alias cc="kubectl config current-context"
 
 # tmux-sessionizer bindkey
 bindkey -s ^f "tmux-sessionizer\n"
@@ -118,3 +120,9 @@ eval "$(fnm env --use-on-cd)"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PATH="/opt/homebrew/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thuhtetaung/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thuhtetaung/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thuhtetaung/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thuhtetaung/google-cloud-sdk/completion.zsh.inc'; fi
