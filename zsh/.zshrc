@@ -104,11 +104,13 @@ alias vim="nvim"
 alias nerd="nerdfetch"
 alias k="kubectl"
 alias cc="kubectl config current-context"
+alias ls="exa"
 
 # tmux-sessionizer bindkey
 bindkey -s ^f "tmux-sessionizer\n"
 
 eval "$(fnm env --use-on-cd)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # BASE16_SHELL="$HOME/.config/base16-shell/"
 # [ -n "$PS1" ] && \
