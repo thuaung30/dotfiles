@@ -121,7 +121,7 @@ eval "$(zoxide init zsh --cmd cd)"
 # #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Users/thuhtetaung/nvim-macos-arm64/bin:/opt/homebrew/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thuhtetaung/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thuhtetaung/google-cloud-sdk/path.zsh.inc'; fi
