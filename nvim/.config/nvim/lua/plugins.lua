@@ -43,9 +43,9 @@ return {
         end
     },
     { "L3MON4D3/LuaSnip",             lazy = true },
-    { "tpope/vim-commentary",         lazy = true },
+    { "tpope/vim-commentary" },
     { "tpope/vim-fugitive",           cmd = "G",    lazy = true },
-    { "tpope/vim-surround",           lazy = true },
+    { "tpope/vim-surround" },
     { "kyazdani42/nvim-web-devicons", lazy = true },
     { "nvim-lualine/lualine.nvim" },
     { "catppuccin/nvim",              lazy = false, name = "catppuccin" },
