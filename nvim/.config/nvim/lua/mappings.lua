@@ -25,7 +25,7 @@ vim.keymap.set("n", "<right>", ":bn<CR>")
 
 -- toggle between buffers
 -- this is already mapped to telescope.buffers
--- vim.keymap.set("n", "<leader>;", ":buffers<CR>") 
+-- vim.keymap.set("n", "<leader>;", ":buffers<CR>")
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
 
 -- jump to start and end of line using the home row keys
