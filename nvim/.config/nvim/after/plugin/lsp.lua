@@ -57,21 +57,6 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-local cmp = require('cmp')
-
-cmp.setup({
-    sources = {
-        { name = "nvim_lsp" },
-    },
-    mapping = {
-        ['<C-p>'] = cmp.mapping.select_prev_item({ behaviour = "select" }),
-        ['<C-n>'] = cmp.mapping.select_next_item({ behaviour = "select" }),
-        ['<C-y>'] = cmp.mapping.confirm({ select = false }),
-        ['<Tab>'] = nil,
-        ['<S-Tab>'] = nil
-    }
-})
-
 lsp.setup()
 
 vim.diagnostic.config({
