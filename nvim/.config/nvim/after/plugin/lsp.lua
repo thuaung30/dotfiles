@@ -42,6 +42,12 @@ lspconfig.rust_analyzer.setup({
     },
 })
 
+lspconfig.tsserver.setup({})
+lspconfig.pyright.setup({})
+
+lspconfig.terraformls.setup({})
+lspconfig.tflint.setup({})
+
 lsp.on_attach(function(_, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
