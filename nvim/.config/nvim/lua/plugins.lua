@@ -36,7 +36,7 @@ return {
                     ['<C-p>'] = cmp.mapping.select_prev_item({ behaviour = "select" }),
                     ['<C-n>'] = cmp.mapping.select_next_item({ behaviour = "select" }),
                     ['<C-y>'] = cmp.mapping.confirm({ select = false }),
-                    ['<Tab>'] = nil,
+                    ['<Tab>'] = cmp.mapping.confirm({ select = false }),
                     ['<S-Tab>'] = nil
                 }
             })
