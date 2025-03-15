@@ -45,6 +45,6 @@ vim.cmd([[
 ]])
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
-vim.cmd.colorscheme "cyberdream"
+vim.cmd.colorscheme "rose-pine"
 
 vim.g.inlay_hints_visible = true
