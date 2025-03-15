@@ -128,3 +128,5 @@ if [ -f '/Users/thuhtetaung/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thu
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/thuhtetaung/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thuhtetaung/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"

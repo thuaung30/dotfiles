@@ -1,6 +1,6 @@
 [user]
-    name = Thu Htet Aung
-	email = "thuhtetaung.d2@gmail.com"
+	name = thuaung30
+	email = 46783042+thuaung30@users.noreply.github.com
 [alias]
     c = commit -m
     ci = commit -m
@@ -16,3 +16,8 @@
 	templateDir = /Users/thuhtetaung/.git-template
 [credential]
 	UseHttpPath = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
