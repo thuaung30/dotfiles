@@ -6,7 +6,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        lazy = true,
+        lazy = false,
         config = function()
             require 'nvim-treesitter.configs'.setup {
                 -- A list of parser names, or "all" (the four listed parsers should always be installed)
@@ -87,7 +87,13 @@ return {
             indent = { enabled = true },
             gitbrowse = { enabled = true },
             lazygit = { enabled = true },
-            picker = { enabled = true },
+            picker = {
+                enabled = true,
+                -- show hidden files like .env
+                hidden = true,
+                -- show ignored files like .git and node_modules
+                ignored = true
+            },
             notifier = { enabled = true },
             quickfile = { enabled = true },
             statuscolumn = { enabled = true },
@@ -165,27 +171,22 @@ return {
     },
     {
         'rose-pine/neovim',
-        lazy = false,
+        lazy = true,
         name = 'rose-pine'
     },
     {
         "scottmckendry/cyberdream.nvim",
-        lazy = true,
-        config = function()
-            require("cyberdream").setup({
-                transparent = true,
-                italic_comments = true,
-                hide_fillchars = true,
-                terminal_colors = true,
-                cache = true,
-                borderless_telescope = true
-            })
-        end,
+        lazy = true
     },
     {
         "folke/tokyonight.nvim",
         lazy = true,
-        opts = {},
+        opts = {}
+    },
+    {
+        'projekt0n/github-nvim-theme',
+        name = 'github-theme',
+        lazy = false
     }
     -- themes
 }

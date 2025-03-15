@@ -1,4 +1,8 @@
-theme = rose-pine
+theme = Github-Dark-High-Contrast
+maximize = true
+macos-titlebar-style = hidden
+window-save-state = always
+window-padding-y = 10,5
 font-family = Hack Nerd Font Mono
 font-size = 16.0
 background-opacity = 1
