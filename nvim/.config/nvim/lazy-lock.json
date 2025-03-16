@@ -1,6 +1,7 @@
 {
   "base16-vim": { "branch": "master", "commit": "3be3cd82cd31acfcab9a41bad853d9c68d30478d" },
   "catppuccin": { "branch": "main", "commit": "a1439ad7c584efb3d0ce14ccb835967f030450fe" },
+  "copilot.vim": { "branch": "release", "commit": "5015939f131627a6a332c9e3ecad9a7cb4c2e549" },
   "cyberdream.nvim": { "branch": "main", "commit": "487da80bcdf4812983ae465840428f58c130767f" },
   "github-theme": { "branch": "main", "commit": "c106c9472154d6b2c74b74565616b877ae8ed31d" },
   "lazy.nvim": { "branch": "main", "commit": "3f13f080434ac942b150679223d54f5ca91e0d52" },

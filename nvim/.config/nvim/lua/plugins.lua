@@ -163,6 +163,12 @@ return {
         },
     },
     -- snacks.nvim qol plugin
+    -- copilot
+    {
+        "github/copilot.vim",
+        lazy = false
+    },
+    -- copilot
     -- themes
     {
         "catppuccin/nvim",
