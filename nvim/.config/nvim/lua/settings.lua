@@ -27,9 +27,10 @@ vim.opt.colorcolumn = "80"
 -- White characters
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.tabstop = 4 -- 1 tab = 2 spaces
-vim.opt.shiftwidth = 4 -- indentation rule
-vim.opt.formatoptions = 'qnj1' -- q  - comment formatting; n - numbered lists; j - remove comment when joining lines; 1 - don't break after one-letter word
+vim.opt.tabstop = 4      -- 1 tab = 2 spaces
+vim.opt.shiftwidth = 4   -- indentation rule
+vim.opt.formatoptions =
+'qnj1'                   -- q  - comment formatting; n - numbered lists; j - remove comment when joining lines; 1 - don't break after one-letter word
 vim.opt.expandtab = true -- expand tab to spaces
 
 -- swap and undo
@@ -45,6 +46,6 @@ vim.cmd([[
 ]])
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
-vim.cmd.colorscheme "github_dark_high_contrast"
+vim.cmd.colorscheme "rose-pine"
 
 vim.g.inlay_hints_visible = true
