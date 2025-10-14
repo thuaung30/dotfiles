@@ -1,5 +1,7 @@
 [language-server]
+pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
 terraform-ls = { command = "terraform-ls", args = ["serve"] }
+yaml-language-server = { command = "yaml-language-server", args = ["--stdio"] }
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
@@ -19,6 +21,33 @@ watcher = "server"
 command = "clippy"
 
 [[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "py(thon)?"
+file-types = [
+  "py",
+  "pyi",
+  "py3",
+  "pyw",
+  "ptl",
+  "rpy",
+  "cpy",
+  "ipy",
+  "pyt",
+  { glob = ".python_history" },
+  { glob = ".pythonstartup" },
+  { glob = ".pythonrc" },
+  { glob = "*SConstruct" },
+  { glob = "*SConscript" },
+  { glob = "*sconstruct" },
+]
+shebangs = ["python", "uv"]
+roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
+comment-token = "#"
+language-servers = ["pyright"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "toml"
 # https://github.com/tamasfe/taplo/issues/580#issuecomment-2004174721
 roots = ["."]
@@ -31,14 +60,14 @@ injection-regex = "rs|rust"
 file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock"]
 shebangs = ["rust-script", "cargo"]
-auto-format = false
+auto-format = true
 comment-tokens = ["//", "///", "//!"]
 block-comment-tokens = [
   { start = "/*", end = "*/" },
   { start = "/**", end = "*/" },
   { start = "/*!", end = "*/" },
 ]
-language-servers = [ "rust-analyzer" ]
+language-servers = ["rust-analyzer"]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
 
@@ -51,7 +80,7 @@ file-types = ["hcl", "tf", "nomad"]
 comment-token = "#"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "terraform-ls" ]
+language-servers = ["terraform-ls"]
 auto-format = true
 
 [[language]]
@@ -62,6 +91,33 @@ file-types = ["tfvars"]
 comment-token = "#"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "terraform-ls" ]
+language-servers = ["terraform-ls"]
 auto-format = true
 grammar = "hcl"
+
+[[language]]
+name = "yaml"
+scope = "source.yaml"
+file-types = [
+  "yml",
+  "yaml",
+  { glob = ".prettierrc" },
+  { glob = ".clangd" },
+  { glob = ".clang-format" },
+  { glob = ".clang-tidy" },
+  { glob = ".gem/credentials" },
+  { glob = ".kube/config" },
+  { glob = ".kube/kuberc" },
+  { glob = "yarn.lock" },
+  "sublime-syntax",
+]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["yaml-language-server"]
+injection-regex = "yml|yaml"
+formatter = { command = "yamlfmt", args = ['-'] }
+auto-format = true
+
+[[grammar]]
+name = "yaml"
+source = { git = "https://github.com/ikatyang/tree-sitter-yaml", rev = "0e36bed171768908f331ff7dff9d956bae016efb" }
